@@ -1,0 +1,144 @@
+body {
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #f0f0f0 !important;
+  background-image: url('/images/landscape2.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  clear: both;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+  text-align: center;
+  clear: both;
+}
+
+/* For NEXTPREV.HTML */
+#nextprev {
+  /* The container for both the previous and next articles. */
+}
+
+#prevart {
+  float: left;
+  text-align: left;
+}
+
+#nextart {
+  float: right;
+  text-align: right;
+}
+
+#nextart,
+#prevart {
+  max-width: 33%;
+}
+
+/* Container for the images */
+.image-links {
+  display: flex; /* Displays the images in a row */
+  justify-content: space-between; /* Distributes images evenly with space between */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+  margin-bottom: 1rem;
+}
+
+.image-links a {
+  display: block;
+  width: 18%; /* Adjusts the width of each image */
+  margin: 0 10px;
+}
+
+.image-links img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-links img:hover {
+  transform: scale(1.1);
+}
+
+.bottom-links {
+  margin-top: 2rem;
+}
+
+/* Social icons */
+.social-icon {
+  width: 25px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Social icon hover effect */
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Default style for the logo */
+.top-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Mobile style (for devices with screen width of 768px or less) */
+@media (max-width: 768px) {
+  .top-logo {
+    width: 50px !important; /* Smaller size on mobile */
+    display: block;
+    margin: 0 auto; /* Centers the logo */
+  }
+
+  .social-icon {
+    width: 20px !important; /* Smaller size for social icons on mobile */
+  }
+
+  .image-links a {
+    width: 0% !important; /* Makes the images take up more space on smaller screens */
+    margin: 10px auto; /* Centers the images */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-links a {
+    width: 90% !important; /* Stacks images vertically on very small screens */
+    margin: 10px 0;
+  }
+}
+
+/* Content Box Wrapper */
+.content-box {
+  background-color: #f0f0f0; /* Light gray background for the box */
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.content-box p,
+.content-box h1,
+.content-box h2,
+.content-box h3 {
+  font-family: sans-serif;
+  color: #333;
+}
